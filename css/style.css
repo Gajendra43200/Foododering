@@ -1,0 +1,242 @@
+/* Css reset  */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* css varible  */
+:root {
+    --navbar-height: 59px;
+}
+
+
+
+/* Navigation Bar  */
+#navbar{
+    /* display: flex;
+    align-items: center; */
+    position: sticky;
+    /* align-items: center; */
+    /* display: flex; */
+    top: 0px;
+}
+#navbar::before {
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    /* jo item he ab navbar ke upr aa jakye to use karege  */
+    z-index: -1;
+    /* opacity:0.4; */
+}
+/* Navigation Bar: Logo and image */
+#logo {
+    margin: 17px 10px;
+    border-radius: 7px;
+    left: 10px;
+}
+#logo img {
+    margin: 7px 17px;
+     display: flex; 
+    /* display: inline; */
+    /* this is use for logo ko bada ya chota krana he to use karege height  */
+    height: 50px;
+}
+
+
+
+/* Navigation Bar : List Styling  */
+#navbar ul {
+    /* use multiple line convert to one line  */
+    display: flex;
+    /* ham iske through logo ke side se ul item ko assign karte he  */
+    /* position: absolute; gap nahi deti he agr iske item ko left right krte he to  */
+    position: absolute;
+    left: 78px;
+    /* top: 15px; */
+   bottom: 8px;
+}
+#navbar ul li {
+    /* color: white; */
+    /* remove bolit from li  */
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a {
+    display: block;
+    color: white;
+    /* giveing a gap b/w item  */
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+
+/* Home Section */
+#client-section{
+    position: relative;
+}
+#home{
+    display:flex;
+    flex-direction: column; 
+    height: 496px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('../bg/grapes-7393372_960_720.webp') no-repeat center center/cover;
+    position: absolute;
+    height: 642px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    /* jo item he ab navbar ke upr aa jakye to use karege  */
+    z-index: -1;
+    opacity:0.7;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+/* Services Center  */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid red;
+    padding: 34px;
+    margin: 3px 2px;
+    border-radius: 25px;
+    background:orange;
+}
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+#services p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* Client section */
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../bg/water-7395510_960_720.webp);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 50px;
+} 
+
+.client-item{
+    padding: 34px;
+}
+
+
+/* contact sectuin  */
+
+#contact-us{
+    position: relative;
+    margin: 8px;
+    padding: 51px 7px;
+
+}
+#contact-us::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* opacity:; */
+    background: url(../bg/meeting-1020145_960_720\ \(2\).jpg) no-repeat center center/cover;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9x 5px;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+
+#contact-us form{
+    width: 45%;
+}
+#contact-us label{
+    font-size: 1.3rem;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+
+
+/* Utility Classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    margin: 17px;
+    border: 2px solid red;
+    background-color: brown;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+.center{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: -27px;
+    padding: 21px;
+}
